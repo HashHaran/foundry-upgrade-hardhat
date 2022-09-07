@@ -1,4 +1,5 @@
 import fs from "fs";
+import "@openzeppelin/hardhat-upgrades";
 import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-preprocessor";
@@ -45,6 +46,8 @@ const config: HardhatUserConfig = {
       },
     }),
   },
+
+  defaultNetwork: "localhost",
 };
 
 export default config;
